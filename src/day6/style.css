@@ -1,0 +1,48 @@
+p{
+    color: cornflowerblue;
+}
+
+.div1,.div2{
+    color: blue;
+}
+
+*{
+    font-size: 20px;
+}
+
+a.div1{
+    color:chocolate;
+    font-size: large;
+    font-family: "Andale Mono";
+}
+
+.p1{
+    color:darkblue;
+}
+.p2{
+    font-size: 40px;
+}
+.p1.p2{
+    font-style: italic;
+}
+
+#myp{
+    color: slateblue;
+    font-style: inherit;
+}
+
+/*div i{*/
+    /*color: red;*/
+/*}*/
+
+div>p>i{
+    color:cadetblue;
+}
+
+/**
+    相邻兄弟选择器，选择当前元素的后一个元素，且当前元素和后一个元素是同一个父元素
+*/
+li+li{
+    color: red;
+    font-size: 30px;
+}

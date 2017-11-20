@@ -1,0 +1,41 @@
+UI元素状态伪类选择器
+    在css3的选择器中，除了结构性伪类选择器外，还有一种UI元素状态伪类选择器。
+    这些选择器的共同特征是：
+        指定的样式只有当元素处于某种状态下才起作用，在默认状态下不起作用
+    在css3中，共有17种UI元素状态伪类选择器，分别是
+    1
+        E:hover  鼠标移动到元素内效果
+    2
+        E:active 鼠标单击选中的效果，（checkbox radio）
+    3
+        E:focus  元素获取焦点是触发 （单击操作）
+    4
+        E:disabled
+    5
+        E:read-only
+    6
+        E:checked
+    7
+        E:default
+    8
+        E:indeterminate
+    9
+        E:selection
+    10
+        E:invalid
+    11
+        E:valid
+    12
+        E:required
+    13
+        E:optional
+    14
+        E:in-range
+
+通用兄弟元素选择器
+
+    div ~ p {
+        ...
+    }
+
+    特点：div 和 p 是同一个父节点下的元素，通过 ~ 表示为兄弟关系  div的兄弟p 的样式

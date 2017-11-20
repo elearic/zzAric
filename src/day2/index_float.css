@@ -1,0 +1,21 @@
+#float1 {
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    float: left;
+}
+
+#float2{
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+    float: left;
+    clear: both;
+}
+
+#float3 {
+    width: 100px;
+    height: 120px;
+    background-color: darkmagenta;
+}
+

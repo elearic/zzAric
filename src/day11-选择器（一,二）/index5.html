@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*li:nth-child(1){*/
+            /*background-color: #70c244;*/
+        /*}*/
+        /*li:nth-child(2){*/
+            /*background-color: #0196e3;*/
+        /*}*/
+        /*li:nth-child(3){*/
+            /*background-color: #1078C7;*/
+        /*}*/
+        /*li:nth-child(4){*/
+            /*background-color: #da421a;*/
+        /*}*/
+        /*通过nth-child 可以给指定的元素设置样式
+            问题：当元素过多时，每个元素单独的指定样式比较浪费使劲
+            通过an+b 准备  a:阿尔法  b:贝塔
+            a代表：nth-child指定样式列表的总数 在这个a == 4 (li元素指定了4个人样式)
+            n代表：遍历nth-child指定元素的下标index
+            b代表：指定样式文件中的哪个样式
+        */
+        li:nth-child(4n+1){
+            background-color: #70c244;
+        }
+        li:nth-child(4n+2){
+            background-color: #0196e3;
+        }
+        li:nth-child(4n+3){
+            background-color: #1078C7;
+        }
+        li:nth-child(4n+4){
+            background-color: #da421a;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>列表</h2>
+    <ul>
+        <li>列表1</li>
+        <li>列表1</li>
+        <li>列表1</li>
+        <li>列表1</li>
+        <li>列表1</li>
+        <li>列表1</li>
+        <li>列表1</li>
+        <li>列表1</li>
+        <li>列表1</li>
+        <li>列表1</li>
+        <li>列表1</li>
+        <li>列表1</li>
+        <li>列表1</li>
+        <li>列表1</li>
+    </ul>
+</body>
+</html>

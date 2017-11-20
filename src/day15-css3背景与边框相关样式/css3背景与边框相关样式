@@ -1,0 +1,21 @@
+1.与背景相关的新增属性
+
+    backgroun-clip: 设置盒子的类型
+
+        border-box  边框盒子
+        padding-box 内边距盒子
+        content-box 内容盒子
+
+    background-origin:  设置盒子背景图片的类型
+        border-box  边框盒子
+        padding-box 内边距盒子
+        content-box 内容盒子
+
+2.在一个元素中显示多个背景图像
+    background-image:url("path1"),url("path2")
+3.圆角边框的绘制
+    border-radius
+
+4.使用图像边框
+    chrome内核设置属性,a.b.c.d四个值分别代表九宫格设置原理的四个值
+    webpit-border-image: 50px 50px 50px 60px；

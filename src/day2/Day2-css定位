@@ -1,0 +1,50 @@
+1.css定位
+    改变元素在页面上的位置
+2.css定位机制
+    普通流：元素按照其在HTML中的位置顺序决定排布(布局)的过程
+    浮动：
+    绝对布局：
+
+3.css定位
+
+    position       (定位)把元素放在一个静态的、相对的、绝对的、或固定的位置上
+            -absolute  生成绝对定位的元素，相对于static定位以外的第一个父元素进行定位
+                           元素的位置通过'left','top','right','bottom'属性进行规定
+
+            -fixed     生成绝对定位的元素，相对于浏览器窗口进行定位
+                       元素的位置通过'left'，'top','right','bottom'属性进行规定
+
+            -relative  生成相对定位的元素，相对于其正常位置进行定位
+                       因此，'left:20'会向元素的left位置添加20像素
+
+            -static    默认值，没有定位。元素出现在正常的流中（忽略top,bottom,left,right,或者z-index声明）
+
+            -inherit(继承)    规定应该从父元素继承position属性的值
+
+        top             元素向上的偏移量
+        left            元素向左的偏移量
+        right           元素向右的偏移量
+        bottom          元素向下的偏移量
+        overflow        设置元素溢出其区域发生的事情
+        clip            设置元素显示的形状
+        vertical-align  设置元素垂直对齐方式
+        z-index         设置元素的堆叠顺序
+
+
+
+     float  浮动
+       1 float属性可用的值
+           left:元素向左移动
+           right:元素向右移动
+           none：元素不浮动
+           inherit:从父级继承浮动属性
+
+       2.clear属性
+            去掉浮动属性(包括继承来的属性)
+            clear 属性值
+                left,right:去掉元素向左向右浮动
+                both:左右两侧均去掉浮动
+                inherit:从父级继承来clear的值
+
+
+

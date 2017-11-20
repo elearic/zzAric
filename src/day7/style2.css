@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: wheat;
+    transition: width 20s,transform 2s;
+    -webkit-transition: width 20s, -webkit-transform 2s;
+}
+
+div:hover{
+    width: 500px;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+
+}

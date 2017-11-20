@@ -1,0 +1,12 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.top{
+    width:75%;
+    height: 200px;
+    background-color: cornflowerblue;
+    position: absolute;
+    float: left;
+}

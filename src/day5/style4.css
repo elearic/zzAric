@@ -1,0 +1,19 @@
+body{
+    width: 80%;
+    height: auto;
+    margin: 5px auto;
+}
+
+.image{
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    padding: 2px;
+    float: left;
+    margin: 5px;
+    margin-bottom: 17px;
+}
+
+.end{
+    text-align: center;
+}

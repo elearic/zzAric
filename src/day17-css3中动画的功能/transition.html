@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*transition:过渡,元素属性的值从规定的时间过渡到新的值*/
+        /*transition:progerty dration timing-function*/
+
+        /*progery:属性名称*/
+        /*dration:过渡时间*/
+        /*timing-function:以哪种形式过渡动画*/
+
+        div{
+            background-color: #70c244;
+            width: 200px;
+            height: 200px;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 0px auto;
+            margin-top: 50px;
+        }
+
+        div:hover{
+            background-color: #70c244;
+            width: 220px;
+            height: 220px;
+            padding: 30px;
+            /*写法一*/
+            transition: background-color 1s linear,padding 1s linear;
+            /*写法二*/
+            /*transition-property: background-color;*/
+            /*transition-duration: 0.3s;*/
+            /*transition-timing-function: linear;*/
+
+        }
+    </style>
+
+</head>
+<body>
+        <div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>founder-查询条件列表</title>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0
+    }
+
+    .main{
+        background-color: bisque;
+        border: 1px slateblue;
+        width: 200px;
+        height: 400px;
+    }
+
+    .left_cont{
+        padding: 0px 5px;
+        width: 1%;
+        height: 100%;
+        background-color: #1e82cd;
+        float: left;
+    }
+
+    .rigth_cont{
+        padding: 0px 5px;
+        width: 99%;
+        height:100%;
+        background-color: coral;
+    }
+
+</style>
+<body>
+    <div class="main">
+        <div class="left_cont" onclick="toggle()">
+            <ul>
+                <li>a</li>
+                <li>a</li>
+                <li>a</li>
+                <li>a</li>
+            </ul>
+        </div>
+        <div id="test" class="rigth_cont" >
+            bbb
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function toggle() {
+        var obj = window.document.getElementById("test");
+        obj.style.transform =""
+    }
+</script>
+</html>

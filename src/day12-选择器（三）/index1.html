@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI元素伪类选择器</title>
+    <style>
+        input[type='text']:hover{
+            background-color: red;
+        }
+        /*hover:鼠标移动到元素内*/
+
+
+        input[type='text']:focus{
+            background-color: #1078C7;
+        }
+        /*元素获焦点,（单击）*/
+
+        input[type='text']:active{
+            background-color: #70c244;
+        }
+        /*单击选中*/
+
+    </style>
+</head>
+<body>
+    <input type="text" name="name">
+    <input type="text" name="age"/>
+</body>
+</html>

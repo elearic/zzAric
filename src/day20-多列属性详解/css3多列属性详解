@@ -1,0 +1,32 @@
+多列属性详解
+
+    多列（Multi-column）是css3新增布局模块，官方称之为Multiple column layout,可以比较轻松的实现多列布局
+
+    属性详解：
+        columns        复合属性（column-width和column-count）,设置宽度和列数
+               语法：[column-width] || [column-count]
+
+        column-width   设置每列的宽度
+               auto(默认值)    根据column-count自定义分配宽度
+               <length>       用长度值来定义列宽。不允许负值
+
+        column-count   设置列数
+                auto(默认值)   根据column-count自定义分配宽度
+                <length>      用整数值来定义列数，不允许负值
+
+        column-gap     设置列之间的间隙
+                语法：[column-rule-width] || [column-rule-style] || [column-rule-color]
+                设置列与列之间的边框，类似于border
+
+        column-rule    复合属性(column-rule-width、column-rule-style和column-rule-color)，设置列之间的边框样式
+                column-rule-width:设置列与列之间的边框厚度
+                column-rule-style:设置列与列之间的边框样式
+                column-rule-color:设置列与列之间的边框颜色
+
+        column-fill    设置列的高度是否统一
+                auto（默认值）列高度自适应内容
+                balance 所有列的高度以其中最高的一列统一
+
+        column-span    设置是否横跨所有列
+                none(默认值)   不跨列
+                all     横跨所有列

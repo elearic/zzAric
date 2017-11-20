@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*li:nth-child(1){*/
+            /*background-color: red;*/
+        /*}*/
+        /*存在多个相同的子元素的时候，nth-child的作用于所有的子元素*/
+        li:only-child{
+            background-color: red;
+        }
+        /*only-child 只会作用于第一个族元素*/
+    </style>
+</head>
+<body>
+    <ul>
+        <li>子元素1</li>
+    </ul>
+    <ul>
+        <li>子元素1</li>
+        <li>子元素2</li>
+        <li>子元素3</li>
+        <li>子元素4</li>
+    </ul>
+</body>
+</html>

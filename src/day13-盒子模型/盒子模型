@@ -1,0 +1,15 @@
+css3盒子相关样式
+
+    div属于block块级元素，
+    span属于inline内联元素
+    height,width属于只能作用于block块级元素上
+
+  1  盒子的类型
+        display：盒子的类型
+           block:设置元素的类型为块级元素(默认)
+           inline:设置元素的类型为内联元素
+           inline-block:设置元素的类型为内联元素，但同时可以指定元素的高和宽
+
+
+  2  对盒子中容纳不下的内容的显示
+

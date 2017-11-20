@@ -1,0 +1,46 @@
+css选择器详解    一
+
+    1.属性选择器
+        在css3中，追加了3个属性选择器分别为，
+        [att *=val]
+        [att ^=val]
+        [att $=val]
+
+    2.结构性伪类选择器
+
+    3.选择器root，not,empty和target
+        1.root:代表整个html文档
+        用法：
+        :{
+            backgroud-color：green;
+         }
+         将整个页面改为绿色的背景
+
+        2.not:对结构内的某个元素进行样式排除
+
+        3.empty:当前元素中内容为空白时使用的样式
+         用法：
+         :{
+            color:###
+         }
+        4.target 对页面中包含target属性的元素，并且点击以后跳转到target目标之后才起作用
+
+
+css选择器详解    二
+
+       选择器： first-child    last-child    nth-child    nth-last-child
+            利用first-child、last-child、nth-child、nth-last-child能够特别针对一个父元素中的第一个子元素、最后一个子元素、
+            指定序号的子元素、甚至第偶数个或第奇数个子元素进行样式的指定
+            
+       nth-of-type nth-last-of-type
+            在css3中，使用nth-of-type和nth-last-of-type选择器来避免这类问题的发生。使用这两个选择器时，css在计算子元素是第奇数个
+            元素还是第偶数个元素时，就只针对同类型的子元素进行计算了
+
+            这类问题指的是什么？
+
+       nth-child
+            指定特定的选择器
+
+       only-child
+            可以使用only-child选择器代替nth-child和nth-last-child的实现方法
+            只针对有一个子元素的时候使用

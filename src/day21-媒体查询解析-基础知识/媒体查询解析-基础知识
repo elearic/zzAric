@@ -1,0 +1,61 @@
+媒体查询解析
+
+    一、基础知识
+            响应式布局(Responsive Web Design)指的是在网页开发过程中针对不同设备开发一套网站，然后根据用户行为以及设备环境
+        （系统平台、屏幕尺寸、屏幕定向等）自适应的显示不同布局。
+            响应式布局的核心是媒体查询。媒体查询(Media Query)是获取用户行为和设备环境、然后根据相应的CSS规则的过程的简称。
+            媒体查询让CSS可以更精确作用于不同的媒体类型和同一媒体的不同条件
+
+
+    二、基础语法
+          <media_query_list>:   [<media_query>[','<media_query>]*]?
+          <媒体查询列表>：[<媒体查询>[,<媒体查询>]*]？
+
+          <media_query>:    [only|not]?  <media_type>[and<expression>]*  | <expression>[and <expression>]*
+          <媒体查询>:[only|not]?<媒体查询>[and <表达式>*] | <表达式>[and <表达式>]*
+
+          <expression>:     '('<media_feature>[:<value>]?')'
+          <表达式>：'（'<媒体特征>[:<值>]？'）'
+
+
+     三、媒体特征
+            媒体特征          取值          接受min max           简介
+            width           <length>        yes                 定义输出设备中的页面可见区域宽度
+
+            height          <length>        yes                 定义输出设备中的页面可见区域高度
+
+            device-width    <length>        yes                 定义输出设备的屏幕可见宽度
+
+            device-heigh    <length>        yes                 定义输出设备的屏幕可见高度
+
+            orientation     portrait        no                  定义'height'是否大于或等于'width'。portrait是
+                            landscape                           landscape否
+
+            aspect-ratio    <ratio>         yes                 定义'width'与'height'的比率
+
+            device-aspect-  <ratio>         yes                 定义'device-width'与'device-height'的比率
+            ratio
+
+            color           <integer>       yes                 定义每一组输出设备的彩色原件个数。如果不是彩色设备，则值等于0
+
+            color-index     <integer>       yes                 定义在输出设备的彩色查询中的条目数。如果没有使用彩色查询表，则值等于0
+
+            monochrome      <integer>       yes                 定义在一个单色框缓冲区中每像素包含的单色原件个数。如果不是单色设备，则值等于0
+
+            resolution      <resolution>    yes                 定义设备的分辨率。如: 96dpi,300dpi,118dpcm
+
+            scan            progressive     no                  定义电视类设备的扫描工作
+                            interlace
+
+     四、媒体类型
+            类型          解释
+            all          所有设备
+            screen       彩色电脑屏幕
+            print        文档打印或打印预览模式
+            projection   项目演示，比如幻灯
+            handheld     手持设备
+            speech       演讲
+            tv           电视
+            tty          固定字母间距的网络的媒体，比如电传打字机
+            braille      盲文
+            embossed     盲文打印

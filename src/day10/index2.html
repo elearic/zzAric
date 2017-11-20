@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>一个CSS+JS打造的可以收缩展开的页面标签效果丨芯晴网页特效丨CsrCode.Cn</title>
+    <style type="text/css">
+        ul,li{ margin:0px; padding:0px; list-style:none;}
+        .tagbox{ width:100px; height:auto; border:1px solid #CCCCCC; POSITION:fixed;_position:absolute; _margin-top:expression(document.documentElement.clientHeight-this.style.pixelHeight+document.documentElement.scrollTop); z-index:99; right:0px; bottom:25px; background-color:#FFFFFF; -webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+        .tag{ width:80px; height:auto; padding:5px 10px;}
+        .tag span{ width:80px; height:30px; display:block; line-height:30px; color:#006600; font-size:12px;}
+        .tag li{ width:80px; height:24px; line-height:24px; font-size:12px; overflow:hidden;}
+        .tag li a{ color:#336699;}
+        .tag li a:hover{ text-decoration:underline; color: #FF0000;}
+        .guanbi{width:100px; height:26px; background-color: #F0F0F0; line-height:26px; font-size:12px; text-align:center; -webkit-border-radius:0px 0px 5px 5px;-moz-border-radius:0px 0px 5px 5px;border-radius:0px 0px 5px 5px;}
+        .guanbi a{ color:#666666; text-decoration:none;}
+        .zhangkai{ width:20px; height:auto; padding:10px 5px; line-height:20px; font-size:14px; text-align:center;-webkit-border-radius:5px 0px 0px 5px;-moz-border-radius:5px 0px 0px 5px;border-radius:5px 0px 0px 5px; border:1px solid #CCCCCC; POSITION:fixed;_position:absolute; _margin-top:expression(document.documentElement.clientHeight-this.style.pixelHeight+document.documentElement.scrollTop); z-index:100; right:0px; bottom:50px; background-color:#FFFFFF; display:none;}
+        .zhangkai a{color:#006600; text-decoration:none;}
+        .xx{ height:1000px;}
+    </style>
+    <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.2.6.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".guanbi a").click(function(){
+                $(".tagbox").hide();
+                $(".zhangkai").show();
+                return false;
+            });
+            $(".zhangkai").click(function(){
+                $(".zhangkai").hide();
+                $(".tagbox").show(500);
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+<br>第一次运行本代码，请刷新一下本页面先~~~<br>所需js文件：<a href="http://jqueryjs.googlecode.com/files/jquery-1.2.6.min.js">jquery-1.2.6.min.js</a><hr><p align="center"><font color=black>本特效由 <a href="http://www.CsrCode.cn" target="_blank">芯晴网页特效</a>丨CsrCode.Cn 收集于互联网，只为兴趣与学习交流，不作商业用途。</font></p>
+<div class="tagbox">
+    <div class="tag">
+        <span>热门标签...</span>
+        <ul>
+            <li><a href='#nogo'>Ajax</a></li>
+            <li><a href='#nogo'>无刷新</a></li>
+            <li><a href='#nogo'>EXT</a></li>
+            <li><a href='#nogo'>淘宝客</a></li>
+            <li><a href='#nogo'>Delphi</a></li>
+            <li><a href='#nogo'>管理系统</a></li>
+            <li><a href='#nogo'>社区系统</a></li>
+            <li><a href='#nogo'>留言本</a></li>
+            <li><a href='#nogo'>静态新闻</a></li>
+        </ul>
+    </div>
+    <div class="guanbi"><a href="#nogo">点击关闭</a></div>
+</div>
+<div class="zhangkai"><a href="#">热门标签</a></div>
+<div class="xx"></div>
+</body>
+</html>

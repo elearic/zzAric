@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: slateblue;
+}
+
+/*.div2{*/
+    /*transform: translate(100px,100px);         !* translate(x坐标，y坐标) 2D移动效果函数，使用时必须先引入该函数，再分别指定不同的浏览器 *!*/
+    /*-webkit-transform: translate(100px,100px); !* -webkit 兼容chrome浏览器*!*/
+    /*-moz-transform: translate(100px,100px);    !* -moz 兼容firefox浏览器*!*/
+    /*-ms-transform: translate(100px,100px);     !* -ms 兼容IE浏览器  360浏览器（内核也为ie）*!*/
+    /*-o-transform: translate(100px,100px);      !* -o 兼容opear 兼容欧朋浏览器*!*/
+/*}*/
+
+
+/*.div2{*/
+    /*transform:rotate(145deg); !*rotate(旋转度数/deg) 2D旋转效果函数，使用方式同上，入参为旋转的角度，但是为deg*!*/
+    /*-webkit-transform: rotate(145deg);*/
+/*}*/
+
+/*.div2{*/
+    /*transform: scale(1,2);  !* scale(宽缩放的倍数,高缩放的倍数) 2D缩放效果函数 *!*/
+    /*-webkit-transform: scale(1,2);*/
+/*}*/
+
+
+.div2{
+    transform: skew(20deg,20deg); /* skew(x轴倾斜的度数/deg,y轴倾斜的度数/deg) 2D倾斜效果函数*/
+    -webkit-transform: skew(20deg,20deg);
+}
+
+

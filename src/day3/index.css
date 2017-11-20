@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+}
+
+#cont{
+    margin: 100px;
+}
+
+#bd {
+    border-style: dotted;
+}
+
+#pd{
+    padding: 10px;;
+}
+
+#content{
+    text-align: center;
+    color: red;
+}
+
+#cont1{
+    margin: 100px;
+}
+
+#bd1{
+    border-style: dotted;
+}
+
+#pd1{
+    padding: 10px;;
+}
+
+#content1{
+    text-align: center;
+    color: red;
+}

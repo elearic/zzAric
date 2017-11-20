@@ -1,0 +1,14 @@
+
+
+
+响应式图片是指用户代理根据输出设备的分辨率不同加载不同类型的图片，不会造成带宽的浪费。同时，在改变输出设备类型或分辨率时，
+能及时加载对应类型的图片。
+
+常见的方式：
+    用srcset和sizes加载不同图片
+
+    picture,source media加载不同图片
+
+    用source type 指定多种格式
+
+    (超赞)polyfill-picturefill

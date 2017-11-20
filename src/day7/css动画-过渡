@@ -1,0 +1,14 @@
+1.使用css3,可以给元素添加一些效果
+
+2.css3过渡是元素从一种样式转换为另一种样式
+    关注点：
+           动画效果的css
+           动画执行的时间
+3.属性
+    transtion
+
+    设置4个过渡属性
+    transition-property   过渡的名称
+    transition-duration   过渡效果花费的时间
+    transition-timing-function  过渡效果的时间曲线
+    transition-delay    过渡效果开始时间（延时时间）

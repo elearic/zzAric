@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css选择器</title>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <style>
+        [title]{
+            color: black;
+            font-style: oblique;
+            font-size: larger;
+        }
+        [title="tt"]{
+            color: brown;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello world</p>元素选择器
+    <hr>
+    <div class="div1">这是div1样式</div>
+    <div class="div2">这是div2样式</div>
+    <hr>
+    <a class="div1">这是a标签内div1样式</a>
+    <hr>
+    <p class="p1">this my web page and class is p1</p>
+    <p class="p2">this my web page and class is p2</p>
+    <p class="p1 p2">this my web page and class is p3</p>
+    <hr>
+    <hr>
+    <hr>
+    <p id="myp">
+        ID选择器测试
+    </p>
+    <hr>
+    <!--<div id="test">第一个将test做为id的div标签</div>>       -->
+    <!--<div id="test">第二个将test做为id的div标签</div>>-->
+    <!-- 在一个页面里,同时定义两个相同的id,会编译不通过，说明一个页面里id是唯一的-->
+    <div class="test1">hello world</div>
+    <div class="test1">hello world</div>
+    <!-- 在一个页面里，可以定义多个相同的class-->
+    <hr>
+    <p title="">
+        属性选择器，title属性值为空时
+    </p>
+    <p title="tt">
+        属性选择器，title属性不为空时
+    </p>
+    <hr>
+    <div>
+        <p>
+            this is "后代选择器test",<i>hello</i> world!!!
+        </p>
+    </div>
+    <hr>
+    <div>
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+        </ul>
+    </div>
+</body>
+</html>

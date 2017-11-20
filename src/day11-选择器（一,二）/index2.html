@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css-选择器(2)</title>
+    <style>
+        /*:root{*/
+            /*background-color: #539770;*/
+        /*}*/
+        /*如果root和body同时使用，则root会作用于整个页面，body只作用于内容区域，如果只使用body，则body将作用于整个页面*/
+        /*body{*/
+            /*background-color: ;*/
+        /*}*/
+
+        /*not使用*/
+        div *:not(p){
+            color: blue;
+        }
+
+        /*empty*/
+        :empty{
+            background-color: aqua;
+        }
+
+        /*target*/
+        :target{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>你好吗?</h2>
+        <h3>我很好?</h3>
+        <p>我很好</p>
+    </div>
+
+    <hr/>
+
+    <table border="1">
+        <tr>
+            <td>内容1</td>
+            <td>内容2</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>内容2</td>
+        </tr>
+        <tr>
+            <td>内容1</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>内容1</td>
+            <td>内容2</td>
+        </tr>
+    </table>
+    <hr/>
+
+    <a href="#a1">菜单一</a>
+    <a href="#a2">菜单二</a>
+    <a href="#a3">菜单三</a>
+    <a href="#a4">菜单四</a>
+    <div id="a1">
+        <h1>菜单一</h1>
+    </div>
+    <div id="a2">
+        <h1>菜单2</h1>
+    </div>
+    <div id="a3">
+        <h1>菜单3</h1>
+    </div>
+    <div id="a4">
+        <h1>菜单4</h1>
+    </div>
+</body>
+</html>
